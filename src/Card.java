@@ -50,10 +50,23 @@ public class Card {
         System.out.println("This is a blank card");
     }
 
+    public short getAvailableItems() {
+        return availableItems;
+    }
 
+    public void setAvailableItems(short availableItems) {
+        this.availableItems = availableItems;
+    }
 
+    public String getCardName() {
+        return cardName;
+    }
 
-//    public void pokemonFight(){
+    public void setCardHp(int cardHp) {
+        this.cardHp = cardHp;
+    }
+
+    //    public void pokemonFight(){
 //        Random randomNumberGenerator = new Random();
 //        int maxNumber = 600;
 //        int minNumber = 0;
