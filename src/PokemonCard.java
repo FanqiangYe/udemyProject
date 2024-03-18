@@ -1,4 +1,4 @@
-public class PokemonCard extends Card {
+public class PokemonCard extends Card implements DrawCard {
 
 
     public PokemonCard(String cardName, int cardHp, short availableItems, double priceFrom, double priceTrend, double thirtyDaysAverage, double sevenDaysAverage, double oneDayAverage) {
@@ -8,5 +8,10 @@ public class PokemonCard extends Card {
     @Override
     public void whatCardType() {
         System.out.println("This is a Pokemon card");
+    }
+
+    @Override
+    public void drawACard() {
+        System.out.println("Draw a " + cardName + " card");
     }
 }

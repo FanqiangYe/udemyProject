@@ -1,8 +1,4 @@
-import org.w3c.dom.ls.LSOutput;
-
-import java.util.Random;
-
-public class Card {
+abstract class Card {
     String cardName;
     int cardHp;
     short availableItems;
@@ -46,9 +42,7 @@ public class Card {
     }
 
 
-    public void whatCardType(){
-        System.out.println("This is a blank card");
-    }
+    public abstract void whatCardType();
 
     public short getAvailableItems() {
         return availableItems;
